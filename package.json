@@ -1,6 +1,6 @@
 {
   "name": "@algosail/eslint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
     ".": "./index.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "jsdoc-examples.js"
   ],
   "peerDependencies": {
     "eslint": "^10.12.0"
