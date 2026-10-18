@@ -1,5 +1,6 @@
 // @ts-check
 import babelParser from '@babel/eslint-parser'
+import perfectionist from 'eslint-plugin-perfectionist'
 import stylistic from '@stylistic/eslint-plugin'
 
 export default [
@@ -18,8 +19,35 @@ export default [
         },
       },
     },
-    plugins: { '@stylistic': stylistic },
+    plugins: {
+      '@stylistic': stylistic,
+      '@perfectionist': perfectionist,
+    },
     rules: {
+      '@perfectionist/sort-imports': [
+        'error',
+        {
+          type: 'alphabetical',
+          newlinesBetween: 'ignore',
+          newlinesInside: 'ignore',
+          sortSideEffects: true,
+          useExperimentalDependencyDetection: false,
+          groups: [
+            ['type-builtin', 'type-external', 'type-subpath'],
+            ['value-builtin', 'value-external', 'value-subpath'],
+            ['type-internal', 'type-parent', 'type-sibling', 'type-index'],
+            ['side-effect', 'value-internal', 'value-parent', 'value-sibling', 'value-index'],
+            'unknown',
+          ],
+        },
+      ],
+      '@perfectionist/sort-named-imports': [
+        'error',
+        {
+          type: 'alphabetical',
+          groups: ['import'],
+        },
+      ],
       '@stylistic/function-call-spacing': [
         'error',
         'always',

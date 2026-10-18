@@ -1,8 +1,8 @@
 {
   "name": "@algosail/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
-  "description": "Shared stylistic ESLint config for the Algosail packages.",
+  "description": "Shared stylistic ESLint config for the ply packages.",
   "type": "module",
   "exports": {
     ".": "./index.js"
@@ -16,6 +16,7 @@
   "dependencies": {
     "@babel/core": "^8.0.7",
     "@babel/eslint-parser": "^8.0.7",
-    "@stylistic/eslint-plugin": "^5.10.0"
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-plugin-perfectionist": "^5.12.1"
   }
 }

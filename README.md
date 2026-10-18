@@ -1,3 +1,3 @@
 # @algosail/eslint-config
 
-ESlint config for ply projects
+ESLint config for ply projects.
