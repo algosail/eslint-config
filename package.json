@@ -2,6 +2,10 @@
   "name": "@algosail/eslint-config",
   "version": "0.2.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algosail/eslint-config.git"
+  },
   "description": "Shared stylistic ESLint config for the ply packages.",
   "type": "module",
   "exports": {
